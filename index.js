@@ -17,6 +17,7 @@ app.use(bodyParser.json());
 app.use("/vendor", vendorRoutes);
 app.use("/firm", firmRoutes);
 app.use("/products", productRoutes);
+//uploads
 app.use("/uploads", express.static("uploads"));
 const PORT = 4000;
 app.listen(PORT, () => {
